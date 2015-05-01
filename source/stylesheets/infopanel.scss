@@ -64,43 +64,64 @@ hr {
 	position: relative;
 
 	.rep-img {
-		width: 175px;
+		width: 225px;
 		margin: 1em auto;
 	}
+}
 
-	.rubber_stamp {
-	  font-family: 'Vollkorn', serif;
-	  font-size: 31px;
-	  line-height: 20px;
-	  text-transform: uppercase;
-	  font-weight: bold;
-	  color: red;
-	  border: 7px solid red;
-	  float: left;
-	  padding: 14px 7px;
-	  border-radius: 10px;
-	  opacity: 0.8;
-	  position: absolute;
-	  top: 120%;
-	  left: 45px;
+.rubber_stamp {
+  font-family: 'Vollkorn', serif;
+  font-size: 31px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: red;
+  border: 7px solid red;
+  padding: 14px 7px;
+  border-radius: 10px;
+  opacity: 0.8;
+  display: inline-block;
+  width: auto;
+  margin: 1em auto;
+}
 
-	  &.finished {
-	  	-webkit-transform: rotate(-10deg) !important;
-	  	-o-transform: rotate(-10deg) !important;
-	  	-moz-transform: rotate(-10deg) !important;
-	  	-ms-transform: rotate(-10deg) !important;
-	  }
+.rubber_stamp::after {
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  top: -10px;
+  left: -10px;
+  padding: 10px;
+  background: url(https://raw.github.com/domenicosolazzo/css3/master/img/noise.png) repeat;
+}
+
+.rep-bio {
+	.rep-party, .rep-name {
+		display: inline-block;
 	}
-	.rubber_stamp::after {
-	  position: absolute;
-	  content: " ";
-	  width: 100%;
-	  height: auto;
-	  min-height: 100%;
-	  top: -10px;
-	  left: -10px;
-	  padding: 10px;
-	  background: url(https://raw.github.com/domenicosolazzo/css3/master/img/noise.png) repeat;
+
+	.rep-party {
+		width: 20px;
+		height: 20px;
+		background: darken(#FAFAFA, 3%);
+		transition: all .2s ease-in-out;
+		margin-right: 5px;
+
+		&.democrat {
+			background: #2980b9;
+		}
+
+		&.republican {
+			background: #c0392b;
+		}
+	}
+
+	.rep-name {
+		vertical-align: top;
+		margin: 0;
 	}
 }
 
