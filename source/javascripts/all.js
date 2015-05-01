@@ -30,6 +30,7 @@ $(document).ready(function() {
 
 					$.getJSON('http://openstates.org/api/v1/legislators/?apikey=ba9b8faa7fa14a52b22569c402b975c6&state=ga&chamber=upper&district=' + district_id, function(data) {
 						$('.rep-img').attr("src", data[0].photo_url);
+						console.log(data[0]);
 
 						if ( data[0].party == "Democratic" ) {
 							$('.rep-party').addClass("democrat");
@@ -38,11 +39,9 @@ $(document).ready(function() {
 						} else {}
 
 						$('.rep-name').html(data[0].full_name);
+						$('.rep-email').html(data[0].email).attr("href", "mailto:" + data[0].email);
 						$('.district-information').append('<div class="rubber_stamp animated bounceInDown">Unopposed</div>');
 
-						// $.getJSON('https://transparencydata.org/api/1.0/entities.json?apikey=ba9b8faa7fa14a52b22569c402b975c6&search=' + data[0].full_name  + '&type=politician', function(data) {
-						// 	console.log(data);
-						// })
 					})
 
 				});
