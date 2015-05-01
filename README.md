@@ -1,1 +1,4 @@
 # contendr
+`bundle`
+`middleman`
+
