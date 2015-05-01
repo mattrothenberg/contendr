@@ -92,15 +92,15 @@ hr {
 	  }
 	}
 	.rubber_stamp::after {
-	  // position: absolute;
-	  // content: " ";
-	  // width: 100%;
-	  // height: auto;
-	  // min-height: 100%;
-	  // top: -10px;
-	  // left: -10px;
-	  // padding: 10px;
-	  // background: url(https://raw.github.com/domenicosolazzo/css3/master/img/noise.png) repeat;
+	  position: absolute;
+	  content: " ";
+	  width: 100%;
+	  height: auto;
+	  min-height: 100%;
+	  top: -10px;
+	  left: -10px;
+	  padding: 10px;
+	  background: url(https://raw.github.com/domenicosolazzo/css3/master/img/noise.png) repeat;
 	}
 }
 

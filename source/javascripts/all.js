@@ -5,7 +5,7 @@ $(document).ready(function() {
 	cartodb.createVis('map', 'https://mrothenberg.cartodb.com/api/v2/viz/c00b64f8-efa6-11e4-8b57-0e853d047bba/viz.json')
 		.done(function(vis, layers) {
 			layers[1].on('featureClick', function(e, latlng, pos, data) {
-
+				console.log(this);
 				$('.rubber_stamp').remove();
 
 				var district_id = data.cartodb_id;
