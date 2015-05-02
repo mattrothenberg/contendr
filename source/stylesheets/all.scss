@@ -1,8 +1,15 @@
-@import "bootstrap";
+// @import "bootstrap";
+
+$screen-sm-min: 768px;
+
+@import "materialize";
+@import "font-awesome";
 @import "flexhelpers";
 @import "cartodb";
+@import "splashModal";
+@import "fab";
 @import "map";
-@import "infopanel";
+@import "repCard";
 @import "animate";
 
 html {
@@ -13,8 +20,11 @@ html {
 
 body {
   font-family: "franklin-gothic-urw";
-  font-size: 14px;
+  font-size: 16px;
   width: 100%;
   height: 100%;
 }
 
+.valign-wrapper.centered {
+	justify-content: center;
+}

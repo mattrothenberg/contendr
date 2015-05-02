@@ -2,37 +2,9 @@
 title: Georgia State Legislature
 ---
 
-<div class="info-panel flex flex-column flex-stretch">
-	<div class="app-info">
-		<img class="app-logo" src="../images/fist.svg" alt="">
-		<h2 class="app-title">contendr</h2>
-		<h2 class="app-title-sub">georgia</h2>
-		<hr>
-		<div class="app-description">
-			<p>The 113th Congress enacted <strong>297 new laws</strong>.</p>
-			<p>The Georgia State Legislature alone enacted <strong>300 new laws</strong> in that same timeframe.</p>
-			<p>And yet, <strong>over 50%</strong> of these state legislators ran unopposed in the elections that put them in office.</p>
-			<p>We think that's a suboptimal democratic experience.</p>
-			<p>In a republic, citizens choose their representatives -- so who do these legislators represent?</p>
-		</div>
-	</div>
-	<div class="app-instructions flex flex-center flex-wrap flex-grow">
-		<div class="app-instructions-container">
-			<img class="img-responsive" src="../images/click.svg" alt="">
-			<h3>Select a district to get started</h3>
-		</div>
-	</div>
-	<div class="district-information flex flex-column flex-wrap flex-grow hide text-center">
-		<figure class="rep-figure">
-			<img class="img-responsive rep-img" src="" alt="">
-		</figure>
-		<div class="rep-bio">
-			<div class="rep-party"></div>
-			<h4 class="rep-name"></h4>
-			<h4>
-				<a class="rep-email" href=""></a>
-			</h4>
-		</div>
-	</div>
-</div>
+<!-- Introduction Modal -->
+<%= partial 'partials/splashModal' %>
+<%= partial 'partials/fab' %>
+<%= partial 'partials/repCard' %>
+
 <div id="map"></div>

@@ -3,13 +3,13 @@
 	height: 100%;
 }
 
-@media(min-width: $screen-sm-min) {
-	#map {
-		float: left;
-		height: 100%;
-		width: 75%;
-	}
-}
+// @media(min-width: $screen-sm-min) {
+// 	#map {
+// 		float: left;
+// 		height: 100%;
+// 		width: 75%;
+// 	}
+// }
 
 // Overrides to remove CartoDB branding, sorry!
 .cartodb-header {
