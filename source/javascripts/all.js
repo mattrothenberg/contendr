@@ -9,7 +9,6 @@ $(document).ready(function() {
 		generateMap();
 		injectSVG();
 		fabSplashModalTrigger();
-		// modalCloseBehavior();
 	}
 
 	function splashModal() {
@@ -95,7 +94,8 @@ $(document).ready(function() {
 						var repName = data.rows[0].representative;
 
 						$.getJSON('http://openstates.org/api/v1/legislators/?apikey=ba9b8faa7fa14a52b22569c402b975c6&state=ga&chamber=upper&district=' + district_id, function(data) {
-							// $('.rep-headshot').attr("src", data[0].photo_url);
+
+							console.log(data[0]);
 
 							$('.rep-card .card-image').css("background", 'url(' + data[0].photo_url + ') no-repeat center center');
 
